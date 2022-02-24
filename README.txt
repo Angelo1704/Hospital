@@ -1,7 +1,8 @@
 projeto 02
 integrantes :
 Alexandre Diano
-
+alexandrediano.souza@outlook.com
+grr20200006
 
 Angelo Gabriel Leite Trombim
 angelogabrielleite@gmail.com
