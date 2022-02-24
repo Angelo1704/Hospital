@@ -16,6 +16,18 @@ module.exports = {
           name: "Bruno Siqueira",
           email: "brunosiq@hotmail.com",
           phone: "(45) 9 9489-9854",
+        },{
+          name: "Diego de Oliveira",
+          email: "diego@gmail.com",
+          phone: "(41) 9 9457-3478",
+        },{
+          name: "Rosilda Mari",
+          email: "rosildamari@outlook.com",
+          phone: "(45) 9 9867-4738",
+        },{
+          name: "Francisco Freitas",
+          email: "francisco@hotmail.com",
+          phone: "(45) 9 9556-9823",
         },
       ],{}
     )

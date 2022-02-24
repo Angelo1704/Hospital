@@ -20,17 +20,17 @@ module.exports = {
           appointmentDate: "2022-4-22",
           description: "Torção no joelho",
         },{
-          patientId: 2,
+          patientId: 4,
           physicianId: 2,
           appointmentDate: "2022-05-04",
           description: "Pulso aberto",
         },{
-          patientId: 1,
+          patientId: 5,
           physicianId: 3,
           appointmentDate: "2022-3-15",
           description: "Miopia",
         },{
-          patientId: 3,
+          patientId: 6,
           physicianId: 3,
           appointmentDate: "2022-3-28",
           description: "Crises de Asma",
