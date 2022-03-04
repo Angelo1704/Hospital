@@ -23,7 +23,7 @@ module.exports = {
     })
 
     if(isPhysicianNew)
-      res.status(403).json({ msg: "Vendedor já foi cadastrado." })
+      res.status(403).json({ msg: "Médico já foi cadastrado." })
     else {
       const physician = await Physician.create({
         name, email, password,
@@ -31,9 +31,9 @@ module.exports = {
         res.status(500).json({ msg: "Não foi possivel inserir os dados" })
       })
       if(physician)
-        res.status(201).json({ msg: "Novo vendedor foi adicionado." })
+        res.status(201).json({ msg: "Novo médico foi adicionado." })
       else
-        res.status(404).json({ msg: "Não foi possivel cadastrar novo paciente" })
+        res.status(404).json({ msg: "Não foi possivel cadastrar novo médico" })
     }
   },
 
@@ -51,8 +51,8 @@ module.exports = {
         return res.status(403).json({ msg: "O Médico tem consultas cadastradas"})
     })
     if(deletedPhysician !== 0 )
-      res.status(200).json({ msg: "Vendedor excluido com sucesso." })
-    else res.status(404).json({ msg: "Vendedor não encontrado" })
+      res.status(200).json({ msg: "Médico excluido com sucesso." })
+    else res.status(404).json({ msg: "Médico não encontrado" })
   },
 
   async updatePhysician(req, res){
@@ -68,7 +68,7 @@ module.exports = {
           await Physician.update(physician,{
             where: { id: physicianId }
           })
-          return res.status(200).json({ msg: "Vendedor atualizado com sucesso" })
+          return res.status(200).json({ msg: "Médico atualizado com sucesso" })
         }else
           return res.status(400).json({ msg: "Campos obrigatórios não preenchidos"})
       }
